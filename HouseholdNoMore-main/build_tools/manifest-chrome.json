@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "NF Nightmare",
+  "version": "2.0",
+  "description": "NF Nightmare — break free from household locks.",
+  "permissions": [
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequest",
+    "tabs",
+    "webNavigation",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.netflix.com/*",
+    "*://*.netflix.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "key": "MIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQAx9X1vs4FnKNfL+uFkNDLg+O7YOVEwtJGPQEG1iV2WburlA4n9W0XQ1X5Hx37Z6xZAscP5CgtW/45a7ZU46f0h0RBrGqjrtC84otsyV4l0kfeH8vBzzh92GK2jRGVtTq1SVQwh9MrL66WHNe22iPND5JqzHRWpohrGn4DAOqv9fWlvad4yGQ/EahBqk+Vh5fDuRSuKMjFsRRmoFYKSLM4HBChanUeWeKitURUyfen/c4uu5BrxBs3ik0gUQKjxBJE+kGG1RqJQ+SszYQxhXHgieZPo5LlOfEjRxPwJZeOBSAtgjahJ9b+EahCnuD9ZLGD7lQyoIXAWq/JEc25khCCyAgMBAAE=",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nf-nightmare@dIIb666.dev",
+      "strict_min_version": "109.0"
+    }
+  }
+}

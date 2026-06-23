@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NF Nightmare</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="extension-header">
+        <h1 class="extension-title">NF Nightmare</h1>
+        <p class="extension-subtitle">by DIIB666 // break free</p>
+    </div>
+
+    <label class="toggle-container" for="toggleSwitch">
+        <div class="toggle-info">
+            <div class="toggle-label">Enable Bypass</div>
+            <div class="toggle-description">Toggle filtering</div>
+        </div>
+        <div class="modern-switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="switch-slider"></span>
+        </div>
+    </label>
+
+    <label class="toggle-container" for="skipIntroSwitch" style="margin-top:8px">
+        <div class="toggle-info">
+            <div class="toggle-label">Auto Skip Intro</div>
+            <div class="toggle-description">Skip intro/recap/credits</div>
+        </div>
+        <div class="modern-switch">
+            <input type="checkbox" id="skipIntroSwitch">
+            <span class="switch-slider"></span>
+        </div>
+    </label>
+
+    <div class="status-indicator status-inactive" id="statusIndicator">
+        <div class="status-dot"></div>
+        <span id="statusText">Extension is disabled</span>
+    </div>
+
+    <div class="footer-link">
+        <a href="https://github.com/DIIB666" target="_blank">github.com/DIIB666</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
